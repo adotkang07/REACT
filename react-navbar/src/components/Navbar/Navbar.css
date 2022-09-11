@@ -1,0 +1,116 @@
+.navbar {
+    background: var(--nav-gradient);
+    height: 80px;
+    padding: 0 20px;
+    display: flex;
+    align-items:center;
+    font-size: 1.2rem;
+}
+
+.nav-header {
+    color:white;
+}
+
+.menu-icon div {
+    color:white;
+    font-size:2rem;
+    width:1.5rem;
+    text-align: center;
+}
+
+.nav-menu {
+    display:flex;
+    list-style:none;
+    margin:0;
+    margin-left:auto;
+}
+
+.nav-link {
+    color:white;
+    text-decoration: none;
+    padding:0.5rem 1rem;
+}
+
+.nav-link:hover {
+    background:var(--link-hover);
+    border-radius: 5px;
+    transition: all 0.2s ease-out;
+}
+
+.menu-icon {
+    display:none;
+}
+
+.nav-link-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        position: relative;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        padding:0;
+        width:100%;
+        position: absolute;
+        top:80px;
+        left: -100px;
+        opacity: 1;
+        transition: all 0.5s ease;
+    }
+
+    .nav-menu.active {
+        background: var(--secondary);
+        left: 0;
+        transition: all 0.5s ease;
+        z-index: 1;
+    }
+    .nav-menu.hidden {
+       display: none;
+    }
+
+    .nav-link {
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display:table;
+    }
+
+    .nav-link:hover {
+        border-radius: 0;
+    }
+
+    .menu-icon {
+        display: block;
+        position: absolute;
+        right: 20px;
+        font-size: 1.8rem;
+        cursor:pointer;
+    }
+
+    .nav-link-mobile {
+        display: block;
+        text-align: center;
+        padding: 1.5rem;
+        margin: 2rem auto;
+        text-decoration: none;
+        color:white;
+        max-width: 500px;
+        width:100%;
+        background: var(--success);
+        font-size: 1.5rem;
+    }
+    
+
+    .nav-link-mobile:hover {
+        background: var(--button-hover);
+        color: var(--primary);
+        transform: all 0.3s ease-out;
+    }
+
+    Button {
+        display:none;
+    }
+}

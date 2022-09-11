@@ -1,0 +1,18 @@
+:root {
+  --primary: #7393B3;
+  --secondary: #00FFFF;
+  --success: #916BBF;
+  --link-hover:  rgba(178, 158, 198, 0.946);
+  --button-hover:rgba(166, 159, 175, 0.8);
+  --nav-gradient: linear-gradient(90deg, #00FFFF 0% , #7393B3 100%);
+}
+
+* {
+  box-sizing: border-box;;
+}
+
+body {
+  margin:0;
+  padding:0;
+  font-family: Roboto;
+}

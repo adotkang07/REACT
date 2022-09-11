@@ -1,0 +1,19 @@
+.btn {
+    font-color:white;
+    padding:15px, 20px;
+    border-radius:5px;
+    outline:none;
+    border: none;
+    cursor:pointer;
+    font-size:16px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background: var(--button-hover);
+    color: var(--primary);
+}
+
+.btn-primary {
+    background: var(--success);
+}
