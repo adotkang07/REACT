@@ -1,9 +1,9 @@
 import React, { useCallback, useState } from "react";
 
 //Param is boolean, default false
-const useToggle = (firstState) => {
+const useToggle = (initVal) => {
     //Init state
-    const [val, setState] = useState(firstState);
+    const [val, setState] = useState(initVal);
 
     //This fucntion changes the bool to opposite value
     const toggle = useCallback((val) => {
